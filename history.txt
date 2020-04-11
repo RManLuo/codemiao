@@ -2,3 +2,6 @@ test.txt: {"hash":"FkC9ABVjCF_DUWUynqH_XF7L277v","key":"FkC9ABVjCF_DUWUynqH_XF7L
 test.txt: {"hash":"FkC9ABVjCF_DUWUynqH_XF7L277v","key":"FkC9ABVjCF_DUWUynqH_XF7L277v"}
 test.txt: {"hash":"FkC9ABVjCF_DUWUynqH_XF7L277v","key":"FkC9ABVjCF_DUWUynqH_XF7L277v"}
 test.txt: {"hash":"FkC9ABVjCF_DUWUynqH_XF7L277v","key":"FkC9ABVjCF_DUWUynqH_XF7L277v"}
+test.tar.gz: {"hash":"FqLlXChRuKWUgTPuohrv1K_ilDEY","key":"FqLlXChRuKWUgTPuohrv1K_ilDEY"}
+test.txt : hash: FkC9ABVjCF_DUWUynqH_XF7L277v, key: FkC9ABVjCF_DUWUynqH_XF7L277v
+d.tar.gz : hash: FqLlXChRuKWUgTPuohrv1K_ilDEY, key: FqLlXChRuKWUgTPuohrv1K_ilDEY 

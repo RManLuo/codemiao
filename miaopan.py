@@ -7,7 +7,7 @@
 # @Software: PyCharm
 # @des     :
 import requests
-import json
+from qiniu import put_file
 import argparse
 from contextlib import closing
 
@@ -29,14 +29,12 @@ def upload(args):
     print("Upload:")
     token = get_token()
     print("Your toekn:", token)
-    data = {'token': token}
-    files = {'file': open(args.path, "rb")}
-    res = requests.post(url=UPLOAD_URL, headers=header, data=data, files=files)
-    res_json = res.json()
-    print("key for download: ", res_json['key'])
-    res_text = res.text
+    ret, info = put_file(token, None, args.path)
+    if (ret == None):
+        exit('Upload failed')
+    print("key for download: ", ret['key'])
     with open("history.txt", "a") as f:
-        f.write(args.path + ': ' + res_text + '\n')
+        f.write("%s : hash: %s, key: %s \n" % (args.path, ret['hash'], ret['key']))
     return
 
 
