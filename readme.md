@@ -19,3 +19,6 @@ Download:
  文件下载进度：11%(3/27) - d.txt
 Download success
 ```
+# License
+
+GNU Lesser General Public License v3.0
